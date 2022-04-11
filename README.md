@@ -19,8 +19,8 @@ PORT=22
 ```
 
 ## How to set the server
-1. use paid server - i used (idcloudhost)[https://console.idcloudhost.com/]
-2. use vm ware - i used (fedora server)[https://getfedora.org/id/server/download/]
+1. use paid server - i used [idcloudhost](https://console.idcloudhost.com/)
+2. use vm ware - i used [fedora server](https://getfedora.org/id/server/download/)
     - to get ipadress from fedora run `ifconfig`
     - pick *inet* value as ip address setting for config file
 
