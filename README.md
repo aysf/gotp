@@ -18,5 +18,11 @@ ADDRESS=103.172.204.217
 PORT=22
 ```
 
+## How to set the server
+1. use paid server - i used (idcloudhost)[https://console.idcloudhost.com/]
+2. use vm ware - i used (fedora server)[https://getfedora.org/id/server/download/]
+    - to get ipadress from fedora run `ifconfig`
+    - pick *inet* value as ip address setting for config file
+
 ## source: 
 - [inanzzz](http://www.inanzzz.com/index.php/post/tjp9/golang-sftp-client-server-example-to-upload-and-download-files-over-ssh-connection-streaming)
