@@ -7,9 +7,19 @@ import (
 	"log"
 	"os"
 	"time"
+
+	"github.com/joho/godotenv"
 )
 
 func main() {
+	err := godotenv.Load("server.conf")
+	if err != nil {
+		log.Fatal("Error loading .env file")
+	}
+	username := os.Getenv("USERNAME")
+	password := os.Getenv("PASSWORD")
+	address := os.Getenv("ADDRESS")
+	port := os.Getenv("PORT")
 
 	home, err := os.UserHomeDir()
 	if err != nil {
@@ -24,10 +34,10 @@ func main() {
 	}
 
 	config := sftp.Config{
-		Username:   "aysf",
-		Password:   "Geniox2022",
+		Username:   username,
+		Password:   password,
 		PrivateKey: string(pk),
-		Server:     "103.172.205.180:22",
+		Server:     address + `:` + port,
 		Timeout:    time.Second * 30,
 	}
 
