@@ -8,7 +8,7 @@
 
 ## How to set configuration file:
 
-put this into `server.conf` and set the username, password, address as your server credentials:
+put this into `server.conf` and change the username, password, address with your server credentials:
 
 ```sh
 USERNAME=foo
